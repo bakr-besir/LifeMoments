@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:background="#2A60A3"
+    android:orientation="vertical"
+    tools:context=".tools.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp">
+
+        <EditText
+            android:id="@+id/paper_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:hint="Date"
+            android:textColor="@color/white"
+            android:textColorHint="#74A7E6" />
+
+        <Spinner
+            android:id="@+id/spnr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:backgroundTint="@color/white"
+            android:popupBackground="#009688" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/curr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qq"
+        android:layout_marginStart="10dp"
+        android:text="Apply current time"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/s"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ss"
+        android:layout_below="@id/curr"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <EditText
+            android:id="@+id/paper_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Place and story"
+            android:textColor="@color/white"
+            android:textColorHint="#74A7E6" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ss"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="1.56"
+            android:background="#18B81E"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="1.56"
+            android:background="#18B81E"
+            android:gravity="center"
+            android:text="Ok"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
